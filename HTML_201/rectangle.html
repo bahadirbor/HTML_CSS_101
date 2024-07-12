@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rectangle</title>
+    </head>
+    <body>
+        <section>
+            <header>
+                <h3 align="Middle">Rectangle</h3>
+            </header>
+        </section>
+        <section>
+            <canvas id="blue_rect"></canvas>
+            <canvas id="green_rect"></canvas>
+            <script>
+                var canvas_one = document.getElementById("blue_rect");
+                var canvas_two = document.getElementById("green_rect");
+                blue = canvas_one.getContext("2d");
+                green = canvas_two.getContext("2d");
+                blue.fillStyle = 'blue';
+                blue.fillRect(50,50,720,380);
+                green.fillStyle = 'green';
+                green.fillRect(50,50,360,190);
+            </script>
+        </section>
+    </body>
+</html>
