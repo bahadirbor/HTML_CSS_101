@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function mouse_event(){
+                var first_field_value = document.getElementById("first_field").value;
+                document.getElementById("second_field").value = first_field_value;
+                document.getElementById("third_field").value = first_field_value;
+            }   
+        </script>
+    </head>
+    <body>
+        1. Field : <input id="first_field" type="text" value=""><br>
+        2. Field : <input id="second_field" type="text"><br>
+        3. Field : <input id="third_field" type="text"><br><br>
+        <button onclick="mouse_event()">Copy</button>
+    </body>
+</html>
