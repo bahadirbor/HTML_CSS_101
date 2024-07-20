@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS 101 First Project</title>
+    </head>
+    <body>
+        <section>
+            <header>
+                <h2>City List</h2>
+            </header>
+        </section>
+        <section>
+            <p><b>Please Select Your Country</b></p>
+            <ul>
+                <li>Turkey</li>
+                <li>USA</li>
+                <li>UK</li>
+            </ul>
+        </section><br>
+        <input type="text" id="Country"><br><br>
+        <button onclick="country_select()">Select</button>
+        <script>
+            function country_select(){
+                var choice = document.getElementById("Country").value.trim();
+                switch(choice){
+                    case "Turkey":
+                        window.location.href = choice + ".html";
+                        break;
+                    default:
+                        window.alert("Error! Don't find any result");
+                }
+            }
+        </script>
+    </body>
+</html>
