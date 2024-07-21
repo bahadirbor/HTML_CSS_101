@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OOP</title>
+        <script>
+            function car(name, model, year, km){
+                this.name = name
+                this.model = model
+                this.year = year
+                this.km = km
+                this.car_info = car_info
+            }
+            function car_info(){
+                var sonuc = "Name: "+this.name+"\nModel: "+this.model+
+                "\nYear: "+this.year+"\nKm: "+this.km;
+                window.alert(sonuc);
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            car_one = new car("Renault", "Clio", 2022, 7500);
+            car_two = new car("Ford", "Kuga", 2023, 5600);
+
+            function get_car(){
+                var car_n = document.getElementById("car_name").value.trim();
+                if(car_n == "car_one"){
+                    car_one.car_info();
+                }
+                else if(car_n == "car_two"){
+                    car_two.car_info();
+                }    
+            }
+        </script>
+        <input type="text" id="car_name">
+        <button onclick="get_car()">Yazdır</button>
+    </body>
+</html>
