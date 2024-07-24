@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Upper and Lower</title>
+        <script>
+            function degis(deger){
+                if (deger == "buyuk"){
+                    document.name_surname.name.value = document.name_surname.name.value.toUpperCase();
+                    document.name_surname.surname.value = document.name_surname.surname.value.toUpperCase();
+                }
+                else if (deger == "kucuk"){
+                    document.name_surname.name.value = document.name_surname.name.value.toLowerCase();
+                    document.name_surname.surname.value = document.name_surname.surname.value.toLowerCase();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <font face="Arial">
+            <h3>Upper to Lower</h3>
+        </font>
+        <form name="name_surname">
+            <b>Name:</b>
+            <input type="text" name="name" size="20"><br>
+            <b>Surname:</b>
+            <input type="text" name="surname" size="20"><br>
+            <button onclick="degis('buyuk')">Büyük Harf</button>
+            <button onclick="degis('kucuk')">Küçük Harf</button>
+        </form>
+    </body>
+</html>

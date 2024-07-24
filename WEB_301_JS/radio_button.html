@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function selection(){
+                var gender;
+                if(document.info.gender[0].checked){
+                    m = "Woman";
+                }
+                else if(document.info.gender[1].checked){
+                    m = "Man";
+                }
+                window.alert("Your select is "+ m);
+            }
+        </script>
+    </head>
+    <body bgcolor="#00629b">
+        <header>
+            <h3>Select Gender</h3>
+            <form name="info">
+                <input type="radio" name="gender" value="Woman"> Woman <br>
+                <input type="radio" name="gender" value="Man"> Man <br><br>
+                <button onclick="selection()">Select</button>
+            </form>
+        </header>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Window Two</title>
+</head>
+<body>
+    <section>
+        <header>
+            <h3>Window Two</h3>
+        </header>
+    </section>    
+    <script>
+        var fiyat,miktar,toplam;
+        fiyat = window.prompt("Fiyatı Giriniz: ");
+        miktar = window.prompt("Miktarı Girin: ");
+        fiy = parseInt(fiyat);
+        mik = parseInt(miktar);
+        toplam = fiy*mik;
+        document.writeln("Fiyat: "+fiyat);
+        document.writeln("Miktar: "+mik);
+        window.alert("Toplam = "+toplam);
+    </script>
+</body>
+</html>
